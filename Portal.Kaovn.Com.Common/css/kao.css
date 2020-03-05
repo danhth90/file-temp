@@ -1,0 +1,128 @@
+﻿body.v4master{
+    font-size:8pt !important;
+}
+* {
+     -webkit-box-sizing: initial !important; 
+    -moz-box-sizing: initial !important;
+     box-sizing: initial !important; 
+}
+#leftpanel-desktop {
+    display: inline;
+}
+
+#leftpanel-mobile {
+    display: none;
+}
+[class*="col-"] {
+    padding-top:8px;
+}
+[class*="col-"] h3.ms-standardheader{
+    padding-top:5px
+}
+.menuiconitem{
+    position: relative;
+}
+.menuiconitem a{
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    /*left: 211px;*/
+    top: 0;
+    z-index: 102;
+    padding: 5px 10px 10px 6px;
+    background: url(/_layouts/Portal.Kaovn.Com.Common/img/e-sprite.png) no-repeat -122px 6px;
+}
+.btn-hidden a{
+      background: url(/_layouts/Portal.Kaovn.Com.Common/img/e-sprite.png) no-repeat -138px 5px;
+  }
+#MenuButton{
+    display:none;
+}
+.pull-left{
+    float:left;
+}
+.pull-right{
+    float:right;
+}
+.clear{
+    clear:both
+}
+@media screen and (max-width: 1024px) {
+    body #s4-leftpanel {
+        width: 200px;
+        position: absolute;
+        left: -200px;
+        z-index: 1;
+        height: 100vh;
+        background-color: #01b48c;
+    }
+
+    .s4-ca {
+        margin-left: 0px;
+    }
+    body #s4-leftpanel-content{
+        border-right-width: 0px;
+        border-bottom-width: 0px;
+        padding: 0px 0px 0px;
+    }
+
+    #leftpanel-desktop {
+        display: none;
+    }
+
+    #leftpanel-mobile {
+        display: inline;
+    }
+    
+    .s4-ba{
+        padding: 15px 0px 5px 15px;
+    }
+    #MenuButton{
+        display:inline-block;
+    }
+    .s4-notdlg #MenuButton{
+        display:none !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    body #s4-leftpanel {
+        width: 200px;
+        position: absolute;
+        left: -200px;
+        z-index: 1;
+        height: 100vh;
+        background-color: #01b48c;
+    }
+
+    .s4-ca {
+        margin-left: 0px;
+    }
+    body #s4-leftpanel-content{
+        border-right-width: 0px;
+        border-bottom-width: 0px;
+        padding: 0px 0px 0px;
+    }
+    
+    .s4-ba{
+        padding: 15px 0px 5px 15px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #leftpanel-desktop {
+        display: none;
+    }
+
+    #leftpanel-mobile {
+        display: inline;
+    }
+    
+    .s4-ba{
+        padding: 15px 0px 5px 15px;
+    }
+}
